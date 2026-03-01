@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THRIFT BYTES | DROPS</title>
+<link rel="icon" href="thrift bytes.jpeg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #3B0A0A;
+            color: #F8F4E3;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 6%;
+            background: rgba(59, 10, 10, 0.95);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            color: #C6A75E;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #F8F4E3;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #C6A75E;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #C6A75E;
+        }
+
+        .btn-outline {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 1px solid #C6A75E;
+            background: transparent;
+            color: #C6A75E;
+            cursor: pointer;
+        }
+
+        .drop-section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .drop-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        @media (max-width: 992px) {
+            .drop-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .drop-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .drop-card {
+            background: #4A0E0E;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .drop-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #C6A75E;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: #C6A75E;
+            color: #3B0A0A;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: auto;
+            text-decoration: none;
+        }
+
+        .drop-card:hover {
+            transform: translateY(-6px);
+        }
+
+        @media (max-width: 768px) {
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #3B0A0A;
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="thrift bytes.jpeg" alt="Logo">
+            THRIFT BYTES
+        </div>
+
+        <div class="menu-toggle">&#9776;</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            
+            <a href="drops.html">Drops</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee">
+            <button class="btn-outline">Message On WhatsApp</button>
+            </a>
+        </div>
+    </nav>
+
+    <section class="drop-section">
+        <h2 class="section-title">Latest Drops</h2>
+
+        <div class="drop-grid">
+
+            <!-- Repeat for all products -->
+            <div class="drop-card">
+                <img src="images.jpeg/cn-1.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-2.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-3.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+            <div class="drop-card">
+                <img src="images.jpeg/cn-4.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-5.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-6.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+            <div class="drop-card">
+                <img src="images.jpeg/cn-7.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-8.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-9.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+            <div class="drop-card">
+                <img src="images.jpeg/cn-10.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-11.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-12.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+            <div class="drop-card">
+                <img src="images.jpeg/cn-13.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-14.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-15.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+            <div class="drop-card">
+                <img src="images.jpeg/cn-16.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-17.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-18.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+            <div class="drop-card">
+                <img src="images.jpeg/cn-19.jpeg" alt="">
+                <h3>Urban Black Tee</h3>
+                <p>Premium cotton oversized fit for ultimate comfort.</p>
+                <div class="price">₹399</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Urban%20Black%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-20.jpeg" alt="">
+                <h3>Street Hoodie</h3>
+                <p>Heavyweight hoodie built for everyday street vibe.</p>
+                <div class="price">₹349</div>
+                <a class="btn-primary" href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Street%20Hoodie"
+                    target="_blank">Buy Now</a>
+            </div>
+
+            <div class="drop-card">
+                <img src="images.jpeg/cn-21.jpeg" alt="">
+                <h3>Classic White Tee</h3>
+                <p>Minimal design. Maximum statement.</p>
+                <div class="price">₹299</div>
+                <a class="btn-primary"
+                    href="https://wa.me/917708655795?text=Hi%20I%20want%20to%20buy%20Classic%20White%20Tee"
+                    target="_blank">Buy Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
